@@ -1,0 +1,51 @@
+[debug] [2023-06-07T00:24:02.146Z] ----------------------------------------------------------------------
+[debug] [2023-06-07T00:24:02.147Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\houzh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-06-07T00:24:02.147Z] CLI Version:   12.3.1
+[debug] [2023-06-07T00:24:02.148Z] Platform:      win32
+[debug] [2023-06-07T00:24:02.148Z] Node Version:  v18.16.0
+[debug] [2023-06-07T00:24:02.148Z] Time:          Tue Jun 06 2023 20:24:02 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2023-06-07T00:24:02.148Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-07T00:24:02.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-07T00:24:02.229Z] > authorizing via signed-in user (philipwhole@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-06-07T00:24:02.238Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-07T00:24:02.238Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-07T00:24:02.238Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-06-07T00:24:02.249Z] [hub] writing locator at C:\Users\houzh\AppData\Local\Temp\hub-react-portables.json
+[debug] [2023-06-07T00:24:02.262Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/react-portables/sites 
+[debug] [2023-06-07T00:24:02.730Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/react-portables/sites 200
+[debug] [2023-06-07T00:24:02.730Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/react-portables/sites {"sites":[{"name":"projects/react-portables/sites/react-portables","defaultUrl":"https://react-portables.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-06-07T00:24:02.730Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-portables/webApps/-/config [none]
+[debug] [2023-06-07T00:24:03.154Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-portables/webApps/-/config 200
+[debug] [2023-06-07T00:24:03.155Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-portables/webApps/-/config {"projectId":"react-portables","storageBucket":"react-portables.appspot.com","apiKey":"AIzaSyAhspP4-ThEIxhqnBpOkOE3B9Q2Nav9Qi4","authDomain":"react-portables.firebaseapp.com","messagingSenderId":"774528729105"}
+[debug] [2023-06-07T00:24:03.164Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-portables [none]
+[debug] [2023-06-07T00:24:03.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-portables 200
+[debug] [2023-06-07T00:24:03.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-portables {"projectId":"react-portables","projectNumber":"774528729105","displayName":"react-portables","name":"projects/react-portables","resources":{"hostingSite":"react-portables"},"state":"ACTIVE","etag":"1_5e8c417d-b084-4ebf-a05c-f2cd3af2087f"}
+[info] i  hosting[react-portables]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[react-portables]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:28 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:28 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:28 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:28 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:28 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:28 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:32 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:32 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:32 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:32 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:32 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:32 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:33 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:33 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:33 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:33 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Jun/2023:00:24:33 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Jun/2023:00:24:33 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
